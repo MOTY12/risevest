@@ -43,7 +43,6 @@ export class AuthService {
 
     const tokenData = createToken(findUser.rows[0]);
     const cookie = createCookie(tokenData);
-    console.log(cookie)
     return { cookie, findUser: findUser.rows[0] };
   }
 
