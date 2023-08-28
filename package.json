@@ -5,7 +5,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "npm install && npm run build && cross-env NODE_ENV=production nodemon dist/server.js",
+    "start": "npm install -g npm@9.8.1 && npm run build && cross-env NODE_ENV=production nodemon dist/server.js",
     "dev": "cross-env NODE_ENV=development nodemon",
     "build": "babel src -d dist --source-maps --copy-files",
     "build:tsc": "tsc && tsc-alias",
